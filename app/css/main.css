@@ -1,0 +1,256 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+input {
+    background: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+}
+
+button {
+    border: none;
+    background-color: #5288c1;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* AUTH FORM*/
+
+.auth-form {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.auth-form__body {
+    display: flex;
+    padding: 40px 80px;
+    flex-direction: column;
+    width: 368px;
+    align-items: center;
+    justify-content: center;
+    background-color: #17212b;
+}
+
+.auth-form__logo {
+    margin-bottom: 34px;
+}
+
+.auth-form__header {
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.auth-form__subheader {
+    font-size: 14px;
+    color: #7f91a4;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.auth-form__nick-input {
+    width: 100%;
+    border-bottom: 1px solid #465362;
+    margin-bottom: 32px;
+}
+
+.auth-form__nick-input:focus {
+    border-bottom: 1px solid #5288c1;
+}
+
+.auth-form__nick-input::placeholder {
+    font-size: 13px;
+}
+
+.auth-form__enter-btn {
+    padding: 16px 32px;
+}
+
+/* CHAT*/
+
+.chat {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.chat__left-side {
+    width: 270px;
+    height: inherit;
+    background-color: #17212b;
+    border-right: 1px solid #101921;
+}
+
+.chat__user {
+    padding: 10px 20px;
+    display: flex;
+}
+
+.chat__user-avatar {
+    min-width: 50px;
+    height: 50px;
+    background: no-repeat center/cover url("../assets/img/default_avatar.png");
+    border-radius: 50%;
+    align-items: center;
+}
+
+.chat__user-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+    max-width: 170px;
+}
+
+.chat__user-nick {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.chat__user-last-message {
+    color: #7f91a4;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.chat__right-side {
+    width: inherit;
+    height: inherit;
+}
+
+.chat__top-bar {
+    width: inherit;
+    height: 70px;
+    background-color: #17212b;
+    border-right: 1px solid #101921;
+    border-bottom: 1px solid #101921;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chat__top-bar-header {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.chat__top-bar-users-count {
+    font-size: 13px;
+    color: #7f91a4;
+}
+
+.chat__right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.chat__body {
+    height: calc(100% - 70px - 70px);
+}
+
+.chat__bottom-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
+    height: 70px;
+    background-color: #17212b;
+    padding: 16px;
+}
+
+.chat__message-input {
+    width: 80%;
+}
+
+.chat__message-send-btn {
+    padding: 8px 16px;
+}
+
+.chat__body {
+    background-color: #0e1621;
+    padding: 16px;
+}
+
+.chat__message {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.chat__message--own {
+    justify-content: flex-end;
+}
+
+.chat__message-wrapper {
+    height: 35px;
+    background-color: #182533;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.chat__message--own .chat__message-wrapper {
+    background-color: #2b5278;
+}
+
+.chat__message-avatar {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    order: 0;
+    margin-right: 16px;
+    background: no-repeat center/cover url("../assets/img/default_avatar.png");
+}
+
+.chat__message-avatar--own {
+    margin: 0 0 0 16px;
+    order: 1;
+}
+
+.chat__message-avatar--not-visible {
+    visibility: hidden;
+}
+
+.chat__message-text {
+    margin: 0 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.chat__message-date {
+    color: #7a8b9e;
+    font-size: 12px;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.chat__message--own .chat__message-date {
+    color: #7da8d3;
+}
+
+.chat__system-message {
+    color: #7f91a4;
+    font-size: 14px;
+    line-height: 25px;
+}
+
